@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Sameer Shaik | Data Intelligence Architect</title>
-    <meta name="description" content="Portfolio of Abdul Sameer Shaik, Data Scientist & Cloud Architect.">
+    <title>Abdul Sameer Shaik | Machine Learning & AI</title>
+    <meta name="description" content="Portfolio of Abdul Sameer Shaik, Machine Learning & AI practitioner and MS Data Science student at Northeastern University.">
 
     <!-- Fonts: Plus Jakarta Sans for a modern, geometric feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
             <a href="#" class="logo">Abdul Sameer Shaik</a>
             <ul class="nav-links">
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#work" class="nav-link">Work</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -43,11 +44,12 @@
                 <h1 class="hero-title">
                     Abdul Sameer Shaik
                     <br>
-                    <span class="text-gradient-primary">Data Scientist & Innovator.</span>
+                    <span class="text-gradient-primary">Machine Learning & AI Practitioner.</span>
                 </h1>
                 <p class="hero-subtitle">
-                    I build scalable ETL pipelines, deep learning models, and cloud-native architectures that transform
-                    raw signals into strategic impact.
+                    MS Data Science candidate at Northeastern. I develop, fine-tune, and evaluate machine learning and
+                    deep learning models with Python, PyTorch, and XGBoost, spanning NLP, transformers, LLMs, and
+                    time series forecasting.
                 </p>
                 <div class="hero-actions">
                     <a href="#work" class="btn btn-primary">View Projects</a>
@@ -67,10 +69,11 @@
                     style="margin-bottom: 2rem; color: var(--text-tertiary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
                     Backed by Innovation from</p>
                 <div class="tech-grid logos-row">
-                    <span class="logo-text">Stanford d.school</span>
-                    <span class="logo-text">Northeastern</span>
+                    <span class="logo-text">Fidelity</span>
+                    <span class="logo-text">MKS Inc.</span>
                     <span class="logo-text">Tata Consultancy Services</span>
-                    <span class="logo-text">Cognizant</span>
+                    <span class="logo-text">Northeastern</span>
+                    <span class="logo-text">Stanford d.school</span>
                 </div>
             </div>
         </div>
@@ -133,13 +136,74 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Selected Work</h2>
-                    <p class="section-desc">High-performance data systems and ML engines.</p>
+                    <p class="section-desc">Machine learning models, NLP systems, and the data pipelines behind them.</p>
                 </div>
-                <!-- ... grid continues ... -->
-
                 <div class="bento-grid">
-                    <!-- Row 1: Large + Medium -->
                     <div class="card bento-large group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">Time Series & ML</span>
+                            </div>
+                            <h3 class="card-title">Hourly Energy Demand Forecasting</h3>
+                            <p class="card-desc">
+                                Forecasts short-term demand from 16 years of PJM data (145,000+ observations) with 20+ engineered temporal and lag features over 24-hour and 7-day horizons. Benchmarked five models including LSTM and ARIMA; XGBoost achieved a best-in-class 0.75% MAPE.
+                            </p>
+                            <div class="card-tech">
+                                <span>XGBoost</span><span>LSTM</span><span>ARIMA</span><span>Python</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-gradient-1"></div>
+                    </div>
+                    <div class="card bento-medium group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">LLM & RAG</span>
+                            </div>
+                            <h3 class="card-title">Semantic Resume Matcher</h3>
+                            <p class="card-desc">
+                                Context-aware resume-job matching with LLaMA, FAISS, and RAG, improving match relevance by 40%. Sentence Transformer embeddings and LLaMA/Mistral-generated justifications make every match explainable.
+                            </p>
+                            <div class="card-tech">
+                                <span>LLaMA</span><span>FAISS</span><span>RAG</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-mesh"></div>
+                    </div>
+                    <div class="card bento-medium group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">NLP Transformer</span>
+                            </div>
+                            <h3 class="card-title">Toxicity Detection in Game Chats</h3>
+                            <p class="card-desc">
+                                Fine-tuned DistilBERT in PyTorch to flag toxic chat messages at 88% F1, with tokenization optimizations that made training 25% faster. A Python + AWS S3 pipeline enables real-time analysis, improving moderation efficiency by 35%.
+                            </p>
+                            <div class="card-tech">
+                                <span>DistilBERT</span><span>PyTorch</span><span>AWS S3</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-grid-pattern"></div>
+                    </div>
+                    <div class="card bento-medium group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">Cloud Data Engineering</span>
+                            </div>
+                            <h3 class="card-title">Cloud-Native Delta Lake</h3>
+                            <p class="card-desc">
+                                Scalable Delta Lake pipeline unifying structured and unstructured data on AWS Glue, S3, and Redshift as a foundation for real-time analytics and ML training, with ACID transaction logs and fine-grained IAM policies.
+                            </p>
+                            <div class="card-tech">
+                                <span>AWS Glue</span><span>S3</span><span>Redshift</span><span>Delta Lake</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-mesh"></div>
+                    </div>
+                    <div class="card bento-medium group">
                         <div class="card-content">
                             <div class="card-meta">
                                 <span class="badge">Forecasting & Geospatial</span>
@@ -147,38 +211,15 @@
                             </div>
                             <h3 class="card-title">Health Risk Forecasting</h3>
                             <p class="card-desc">
-                                Predicted U.S. obesity trends using LSTM/ARIMA models across 50 states.
-                                Built an interactive Streamlit dashboard for geospatial analysis of CDC BRFSS data.
+                                Predicted U.S. obesity trends using LSTM/ARIMA models across 50 states. Built an interactive Streamlit dashboard for geospatial analysis of CDC BRFSS data.
                             </p>
                             <div class="card-tech">
                                 <span>LSTM</span><span>TensorFlow</span><span>Streamlit</span>
                             </div>
-                            <a href="https://github.com/AbdulSameerS/Health-Risk-Forecasting" target="_blank"
-                                class="card-link"><i class="fas fa-arrow-right"></i></a>
+                            <a href="https://github.com/AbdulSameerS/Health-Risk-Forecasting" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
                         </div>
                         <div class="card-visual visual-gradient-1"></div>
                     </div>
-
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">Streaming Data</span>
-                            </div>
-                            <h3 class="card-title">Real-Time Data Pipeline</h3>
-                            <p class="card-desc">
-                                End-to-end Kafka & Spark streaming pipeline processing 1M+ daily events.
-                                Orchestrated with Airflow and Docker on AWS.
-                            </p>
-                            <div class="card-tech">
-                                <span>Kafka</span><span>Spark</span><span>AWS</span>
-                            </div>
-                            <a href="https://github.com/AbdulSameerS/Real-Time-Data-Pipeline" target="_blank"
-                                class="card-link"><i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="card-visual visual-grid-pattern"></div>
-                    </div>
-
-                    <!-- Row 2: Medium + Medium + Medium -->
                     <div class="card bento-medium group">
                         <div class="card-content">
                             <div class="card-meta">
@@ -187,50 +228,28 @@
                             </div>
                             <h3 class="card-title">Sentiment Analysis</h3>
                             <p class="card-desc">
-                                Processed 100K+ product reviews using fine-tuned BERT models.
-                                Includes keyword extraction (YAKE) and visualization.
+                                Processed 100K+ product reviews using fine-tuned BERT models. Includes keyword extraction (YAKE) and visualization.
                             </p>
                             <div class="card-tech">
                                 <span>BERT</span><span>HuggingFace</span><span>Streamlit</span>
                             </div>
-                            <a href="https://github.com/AbdulSameerS/Sentiment-Analysis-Project" target="_blank"
-                                class="card-link"><i class="fas fa-arrow-right"></i></a>
+                            <a href="https://github.com/AbdulSameerS/Sentiment-Analysis-Project" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
                         </div>
                         <div class="card-visual visual-mesh"></div>
                     </div>
-
-                    <div class="card bento-medium group">
+                    <div class="card bento-large group">
                         <div class="card-content">
                             <div class="card-meta">
-                                <span class="badge">LLM & RAG</span>
+                                <span class="badge">Streaming Data</span>
                             </div>
-                            <h3 class="card-title">Semantic Resume Matcher</h3>
+                            <h3 class="card-title">Real-Time Data Pipeline</h3>
                             <p class="card-desc">
-                                Context-aware matching engine using LLaMA, FAISS, and RAG.
-                                Bridges the semantic gap with high-dimensional vector search.
+                                End-to-end Kafka & Spark streaming pipeline processing 1M+ daily events. Orchestrated with Airflow and Docker on AWS.
                             </p>
                             <div class="card-tech">
-                                <span>Python</span><span>LangChain</span>
+                                <span>Kafka</span><span>Spark</span><span>AWS</span>
                             </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="card-visual visual-mesh"></div>
-                    </div>
-
-                    <!-- Use class bento-medium for 3-col layout fit -->
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">NLP Transformer</span>
-                            </div>
-                            <h3 class="card-title">Toxicity Detection</h3>
-                            <p class="card-desc">
-                                Fine-tuned DistilBERT model for real-time chat sanitization with 88% F1-score.
-                            </p>
-                            <div class="card-tech">
-                                <span>NLP</span><span>PyTorch</span>
-                            </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                            <a href="https://github.com/AbdulSameerS/Real-Time-Data-Pipeline" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
                         </div>
                         <div class="card-visual visual-grid-pattern"></div>
                     </div>
@@ -246,6 +265,36 @@
                 </div>
 
                 <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-date">Jul 2026 - Present</div>
+                        <div class="exp-main">
+                            <h3 class="exp-role">Data Analyst Co-op</h3>
+                            <p class="exp-company">Fidelity · Boston, MA</p>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Develop Python and SQL workflows to prepare, clean, and validate large-scale customer datasets, building reliable foundations for analytical and machine learning use cases.</li>
+                            <li>Perform exploratory data analysis and feature engineering with Pandas to uncover patterns, diagnose data quality issues, and prepare model-ready features.</li>
+                            <li>Experiment with LLMs and generative AI techniques for information extraction from unstructured customer feedback, evaluating outputs against a manually labeled sample to measure accuracy and error patterns and identify the most reliable approach.</li>
+                            <li>Optimize SQL queries and Python scripts to reduce processing time and computational overhead in recurring analysis workflows.</li>
+                            <li>Collaborate with cross-functional stakeholders to translate requirements into technical solutions and communicate insights.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-date">Apr 2026 - Jul 2026</div>
+                        <div class="exp-main">
+                            <h3 class="exp-role">Strategic Marketing Analyst (AI Focus)</h3>
+                            <p class="exp-company">MKS Inc. · Andover, MA</p>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Built end-to-end automated data pipelines using Python, REST APIs, and Azure to ingest, clean, and transform market, competitor, and financial data, with validation checks ensuring accuracy.</li>
+                            <li>Deployed automated processing and daily dashboard refreshes with Azure Functions, taking the solution from prototype to dependable production use.</li>
+                            <li>Loaded processed data into Azure SQL Database and developed interactive Power BI dashboards on market trends and competitor positioning.</li>
+                            <li>Engineered a web-based dashboard replicating Power BI visuals and integrating competitor 10-K and quarterly financials for continuously updated financial analysis.</li>
+                            <li>Researched emerging AI technologies and market trends with cross-functional stakeholders, translating findings into strategic planning insights.</li>
+                        </ul>
+                    </div>
+
                     <div class="exp-item">
                         <div class="exp-date">Sep 2025 - Present</div>
                         <div class="exp-main">
@@ -265,21 +314,18 @@
                     </div>
 
                     <div class="exp-item">
-                        <div class="exp-date">Aug 2022 - Dec 2024</div>
+                        <div class="exp-date">Sep 2023 - Dec 2024</div>
                         <div class="exp-main">
-                            <h3 class="exp-role">Data Scientist</h3>
-                            <p class="exp-company">Tata Consultancy Services (TCS)</p>
+                            <h3 class="exp-role">Data Scientist (ASE)</h3>
+                            <p class="exp-company">Tata Consultancy Services · Chennai, India</p>
                         </div>
                         <ul class="exp-details">
-                            <li>Architected end-to-end GenAI data pipelines and RAG frameworks using Python, LangChain,
-                                and AWS Glue, optimizing vector embeddings and reducing context retrieval latency by 40%
-                                for downstream LLM applications.</li>
-                            <li>Fine-tuned and deployed Transformer models (e.g., BERT, LLaMA) alongside XGBoost
-                                classifiers using MLflow, integrating Tableau dashboards to automate anomaly detection
-                                in unstructured logs, reducing incident severity by 12% through semantic analysis.</li>
-                            <li>Built interactive AI-powered analytics interfaces using Streamlit, PowerBI, and Plotly
-                                to enable natural language querying of KPIs, leading to a 15% increase in data-driven
-                                decision-making across business units.</li>
+                            <li>Developed Python and SQL validation frameworks for schema consistency, missing values, duplicates, and range constraints, ensuring reliable data for analytics and modeling.</li>
+                            <li>Debugged data quality issues through systematic root-cause analysis and testing, documenting validation procedures to keep outputs consistent and reproducible.</li>
+                            <li>Optimized SQL transformations in Snowflake and PostgreSQL to improve performance, reduce compute cost, and improve maintainability.</li>
+                            <li>Built and evaluated predictive models with scikit-learn on validated datasets, tuning features and parameters to improve accuracy.</li>
+                            <li>Built interactive KPI dashboards with Streamlit and Plotly to visualize operational metrics and support analytical investigations.</li>
+                            <li>Collaborated with technical and business teams, maintaining traceability through GitHub pull requests and technical documentation.</li>
                         </ul>
                     </div>
 
@@ -299,6 +345,37 @@
                             <li>Optimized query performances by refining data models, directly supporting
                                 cross-functional teams in executing faster analytics workloads.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="card skill-card">
+                        <h3 class="skill-title">Programming</h3>
+                        <div class="card-tech"><span>Python</span><span>SQL</span><span>C++</span><span>R</span><span>Java</span></div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3 class="skill-title">Machine Learning & Deep Learning</h3>
+                        <div class="card-tech"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>XGBoost</span><span>LSTM</span><span>ARIMA</span><span>Model Evaluation</span><span>Feature Engineering</span><span>Time Series Forecasting</span></div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3 class="skill-title">AI & NLP</h3>
+                        <div class="card-tech"><span>DistilBERT</span><span>BERT</span><span>LLaMA</span><span>Sentence Transformers</span><span>LLMs</span><span>Generative AI</span><span>RAG</span><span>FAISS</span></div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3 class="skill-title">Data & Experimentation</h3>
+                        <div class="card-tech"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>EDA</span><span>Data Preprocessing</span><span>Statistical Analysis</span></div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3 class="skill-title">Development & Cloud</h3>
+                        <div class="card-tech"><span>Git</span><span>GitHub</span><span>Docker</span><span>AWS S3</span><span>AWS Glue</span><span>Snowflake</span><span>PostgreSQL</span><span>Streamlit</span><span>Plotly</span><span>Power BI</span></div>
                     </div>
                 </div>
             </div>
@@ -348,18 +425,20 @@
                     <h3>About Me</h3>
                     <div class="about-content">
                         <p>
-                            I am a Data Scientist and Cloud Architect driven by the conviction that data should not just
+                            I am a Machine Learning and AI practitioner driven by the conviction that data should not just
                             inform decisions—it should drive innovation. Currently pursuing my <strong>Master of Science
                                 in Data Science</strong> at <strong>Northeastern University</strong>, I bridge the gap
-                            between robust data engineering and advanced machine learning.
+                            between reliable data engineering and applied machine learning, from NLP and transformer
+                            models to time series forecasting.
                         </p>
                         <br>
-                        <p><strong>Professional Odyssey:</strong><br>
-                            My journey began with wrangling petabyte-scale datasets at <strong>Cognizant</strong>,
-                            evolving into a full-stack Data Scientist role at <strong>Tata Consultancy Services
-                                (TCS)</strong>. There, I architected cloud-native GenAI pipelines and fine-tuned LLMs
-                            that reduced operational latencies by 40%, earning the "Best Employee" award for my
-                            contributions to scalable automation.</p>
+                        <p><strong>Professional Journey:</strong><br>
+                            I started at <strong>Tata Consultancy Services (TCS)</strong>, building data validation
+                            frameworks, optimized Snowflake/PostgreSQL transformations, and predictive models, and
+                            earned the "Best Employee" award. At <strong>MKS Inc.</strong> I took automated Azure data
+                            pipelines and Power BI dashboards from prototype to production. Today, as a Data Analyst
+                            Co-op at <strong>Fidelity</strong>, I prepare model-ready customer data and evaluate LLM-based
+                            information extraction from unstructured feedback.</p>
                         <br>
                         <p><strong>Leadership & Innovation:</strong><br>
                             Beyond the code, I am a <strong>University Innovation Fellow (UIF)</strong> at Stanford
@@ -368,7 +447,7 @@
                             coordinating community outreach with the <em>Helping Minds</em> NGO.</p>
                         <br>
                         <p><strong>Beyond the Screen:</strong><br>
-                            When I'm not optimizing vector databases or training Transformers, you can find me exploring
+                            When I'm not fine-tuning transformers or evaluating models, you can find me exploring
                             <strong>farming</strong> practices, staying active, or organizing community events. I
                             believe in technology as a force for social good—whether it's predicting health risks or
                             empowering students.

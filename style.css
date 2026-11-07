@@ -779,3 +779,26 @@ a {
     background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
     z-index: 9999;
 }
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    padding: 1.75rem;
+}
+
+.skill-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.skill-card .card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
