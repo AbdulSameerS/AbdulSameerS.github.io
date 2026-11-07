@@ -1,480 +1,596 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Sameer Shaik | Machine Learning & AI</title>
-    <meta name="description" content="Portfolio of Abdul Sameer Shaik, Machine Learning & AI practitioner and MS Data Science student at Northeastern University.">
+    <title>Abdul Sameer Shaik · Machine Learning & AI</title>
+    <meta name="description"
+        content="Abdul Sameer Shaik — Machine Learning & AI practitioner, MS Data Science at Northeastern University, Data Analyst Co-op at Fidelity.">
+    <meta property="og:title" content="Abdul Sameer Shaik · Machine Learning & AI">
+    <meta property="og:description"
+        content="ML, NLP, LLMs and time series forecasting. MS Data Science at Northeastern, Data Analyst Co-op at Fidelity.">
+    <meta property="og:url" content="https://abdulsameers.github.io/">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
 
-    <!-- Fonts: Plus Jakarta Sans for a modern, geometric feel -->
+    <script>
+        // Apply saved theme before paint to avoid a flash
+        try {
+            var t = localStorage.getItem('theme');
+            if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) { }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="spotlight-overlay"></div>
-
-    <nav class="navbar">
-        <div class="container nav-inner">
-            <a href="#" class="logo">Abdul Sameer Shaik</a>
-            <ul class="nav-links">
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <header class="nav" id="nav">
+        <div class="wrap nav-inner">
+            <a href="#top" class="brand" aria-label="Home">
+                <span class="brand-mark">AS</span>
+                <span class="brand-name">Abdul Sameer Shaik</span>
+            </a>
+            <nav class="nav-links" id="nav-links" aria-label="Primary">
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+                    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                    </svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <a href="#contact" class="btn btn-solid btn-sm nav-cta">Get in touch</a>
+                <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="nav-links">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </button>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <main>
+    <main id="main">
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-container">
-                <div class="hero-badge">Available for new opportunities</div>
-                <h1 class="hero-title">
-                    Abdul Sameer Shaik
-                    <br>
-                    <span class="text-gradient-primary">Machine Learning & AI Practitioner.</span>
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="wrap">
+                <a href="#experience" class="pill reveal">
+                    <span class="dot"></span>
+                    Data Analyst Co-op at Fidelity · MS Data Science at Northeastern
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" />
+                    </svg>
+                </a>
+                <h1 class="hero-title reveal">
+                    I build and evaluate <span class="hl">machine learning</span> systems that turn messy data into
+                    decisions.
                 </h1>
-                <p class="hero-subtitle">
-                    MS Data Science candidate at Northeastern. I develop, fine-tune, and evaluate machine learning and
-                    deep learning models with Python, PyTorch, and XGBoost, spanning NLP, transformers, LLMs, and
-                    time series forecasting.
+                <p class="hero-sub reveal">
+                    I'm Abdul Sameer Shaik, a Machine Learning & AI practitioner in Boston. I develop, fine-tune, and
+                    evaluate models with Python, PyTorch, and XGBoost across NLP, transformers, LLMs, and time series
+                    forecasting.
                 </p>
-                <div class="hero-actions">
-                    <a href="#work" class="btn btn-primary">View Projects</a>
-                    <a href="https://github.com/AbdulSameerS" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-github"></i> GitHub</a>
+                <div class="hero-cta reveal">
+                    <a href="#work" class="btn btn-solid">View my work
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/AbdulSameerS" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <svg viewBox="0 0 24 24" class="fill" aria-hidden="true">
+                            <path
+                                d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.880-1.370-3.880-1.370-.53-1.330-1.290-1.690-1.290-1.690-1.050-.72.080-.7.080-.7 1.160.08 1.770 1.190 1.770 1.190 1.030 1.770 2.710 1.260 3.370.96.1-.75.4-1.260.73-1.550-2.550-.29-5.240-1.280-5.240-5.680 0-1.260.45-2.280 1.190-3.080-.12-.29-.52-1.460.11-3.050 0 0 .97-.31 3.170 1.180a11 11 0 0 1 5.770 0c2.200-1.490 3.170-1.180 3.170-1.180.63 1.590.23 2.760.11 3.050.74.8 1.190 1.820 1.190 3.080 0 4.410-2.690 5.380-5.250 5.670.41.36.78 1.060.78 2.140v3.170c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdul-sameer-shaik-689323189/" target="_blank" rel="noopener"
+                        class="btn btn-ghost">
+                        <svg viewBox="0 0 24 24" class="fill" aria-hidden="true">
+                            <path
+                                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.230.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+                        </svg>
+                        LinkedIn
+                    </a>
                 </div>
 
-                <!-- Abstract Visual element -->
-                <div class="hero-glow"></div>
+                <dl class="stats reveal">
+                    <div class="stat">
+                        <dt>Energy forecast error</dt>
+                        <dd>0.75<span>% MAPE</span></dd>
+                    </div>
+                    <div class="stat">
+                        <dt>Toxicity model</dt>
+                        <dd>88<span>% F1</span></dd>
+                    </div>
+                    <div class="stat">
+                        <dt>Resume match relevance</dt>
+                        <dd>+40<span>%</span></dd>
+                    </div>
+                    <div class="stat">
+                        <dt>MS Data Science GPA</dt>
+                        <dd>3.75<span>/4.0</span></dd>
+                    </div>
+                </dl>
             </div>
         </section>
 
-        <!-- Tech Stack / Sticker Sheet -->
-        <div class="tech-ticker">
-            <div class="container">
-                <p class="section-label-center"
-                    style="margin-bottom: 2rem; color: var(--text-tertiary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
-                    Backed by Innovation from</p>
-                <div class="tech-grid logos-row">
-                    <span class="logo-text">Fidelity</span>
-                    <span class="logo-text">MKS Inc.</span>
-                    <span class="logo-text">Tata Consultancy Services</span>
-                    <span class="logo-text">Northeastern</span>
-                    <span class="logo-text">Stanford d.school</span>
-                </div>
+        <!-- COMPANIES -->
+        <section class="logos" aria-label="Where I've worked and studied">
+            <div class="wrap logos-inner">
+                <span class="logos-label">Experience across</span>
+                <ul class="logos-list">
+                    <li>Fidelity</li>
+                    <li>MKS Inc.</li>
+                    <li>Tata Consultancy Services</li>
+                    <li>Northeastern University</li>
+                    <li>Stanford d.school</li>
+                </ul>
             </div>
-        </div>
+        </section>
 
-        <!-- Leadership / Innovation Section (New) -->
-        <section class="section" id="leadership">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Leadership & Innovation</h2>
-                    <p class="section-desc">Driving change through Design Thinking and strategic initiative.</p>
-                </div>
+        <!-- WORK -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <p class="eyebrow">01 · Selected work</p>
+                    <h2>Projects with measurable results</h2>
+                    <p class="sec-desc">Models, NLP systems, and the data pipelines behind them.</p>
+                </header>
 
-                <div class="feature-spotlight">
-                    <div class="spotlight-content">
-                        <div class="spotlight-badge">University Innovation Fellow</div>
-                        <h3 class="spotlight-title">Championing Change at Stanford d.school</h3>
-                        <p class="spotlight-desc">
-                            Selected as a <strong>University Innovation Fellow</strong> by Stanford University's Hasso
-                            Plattner Institute of Design (d.school).
-                            Led campus-wide initiatives to democratize access to innovation resources, applying rigorous
-                            <strong>Design Thinking</strong> methodologies to solve systemic student engagement
-                            challenges.
-                        </p>
-                        <ul class="spotlight-list">
-                            <li><i class="fas fa-lightbulb"></i> Spearheaded "Change Agency" workshops for 500+
-                                students.</li>
-                            <li><i class="fas fa-users-cog"></i> President of Student Activity Centre (MITS), managing
-                                diverse clubs.</li>
-                            <li><i class="fas fa-globe-asia"></i> AI Researcher at Asia University, Taiwan (Winter
-                                Intern).</li>
+                <div class="projects">
+                    <article class="project project-feature reveal">
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="tag">Time Series · ML</span>
+                            </div>
+                            <h3>Hourly Energy Demand Forecasting</h3>
+                            <p>Short-term demand forecasting on 16 years of PJM data (145,000+ hourly observations),
+                                with 20+ engineered temporal and lag features predicting consumption over 24-hour and
+                                7-day horizons. Benchmarked five models, including LSTM and ARIMA.</p>
+                            <ul class="chips">
+                                <li>XGBoost</li>
+                                <li>LSTM</li>
+                                <li>ARIMA</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="metric-big">
+                                <span class="metric-num">0.75%</span>
+                                <span class="metric-label">MAPE with XGBoost, best of five models</span>
+                            </div>
+                            <svg class="spark" viewBox="0 0 320 120" preserveAspectRatio="none">
+                                <path class="spark-a"
+                                    d="M0 80 C 20 60, 30 40, 50 50 S 80 95, 100 85 S 130 35, 150 40 S 180 90, 200 82 S 230 30, 250 38 S 285 92, 320 70" />
+                                <path class="spark-b"
+                                    d="M0 84 C 20 64, 30 44, 50 54 S 80 92, 100 88 S 130 40, 150 44 S 180 86, 200 85 S 230 36, 250 42 S 285 88, 320 74" />
+                            </svg>
+                            <div class="legend"><span class="la">Actual</span><span class="lb">Forecast</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="tag">LLM · RAG</span>
+                            <span class="metric">+40% relevance</span>
+                        </div>
+                        <h3>Semantic Resume Matcher</h3>
+                        <p>Context-aware resume-to-job matching with LLaMA, FAISS, and retrieval-augmented generation.
+                            Sentence Transformer embeddings score semantic similarity, and LLaMA/Mistral write a
+                            plain-language justification for every match.</p>
+                        <ul class="chips">
+                            <li>LLaMA</li>
+                            <li>FAISS</li>
+                            <li>RAG</li>
+                            <li>Sentence Transformers</li>
                         </ul>
-                        <br>
-                        <a href="https://universityinnovation.org/wiki/Fellow:Abdul_Sameer_Shaik" target="_blank"
-                            class="btn btn-primary">View Fellow Profile</a>
-                    </div>
-                    <div class="spotlight-visual">
-                        <!-- Abstract representation of 'Innovation' -->
-                        <div class="orb"></div>
-                        <div class="glass-panel">
-                            <div class="stat-row">
-                                <span class="stat-label">Impact</span>
-                                <span class="stat-val">Campus-wide</span>
-                            </div>
-                            <div class="stat-row">
-                                <span class="stat-label">Focus</span>
-                                <span class="stat-val">Design Thinking</span>
-                            </div>
-                            <div class="stat-row">
-                                <span class="stat-label">Award</span>
-                                <span class="stat-val">Best Employee (TCS)</span>
-                            </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="tag">NLP · Transformers</span>
+                            <span class="metric">88% F1</span>
                         </div>
-                    </div>
+                        <h3>Toxicity Detection in Game Chats</h3>
+                        <p>Fine-tuned DistilBERT in PyTorch to flag toxic chat messages, with tokenization optimizations
+                            that made training 25% faster. A Python and AWS S3 pipeline enables real-time analysis,
+                            improving moderation efficiency by 35%.</p>
+                        <ul class="chips">
+                            <li>DistilBERT</li>
+                            <li>PyTorch</li>
+                            <li>AWS S3</li>
+                        </ul>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="tag">Cloud Data Engineering</span>
+                            <span class="metric">ACID</span>
+                        </div>
+                        <h3>Cloud-Native Delta Lake</h3>
+                        <p>Scalable Delta Lake pipeline unifying structured and unstructured data on AWS Glue, S3, and
+                            Redshift as a foundation for real-time analytics and ML training, secured with Delta
+                            transaction logs and fine-grained IAM policies.</p>
+                        <ul class="chips">
+                            <li>AWS Glue</li>
+                            <li>S3</li>
+                            <li>Redshift</li>
+                            <li>Delta Lake</li>
+                        </ul>
+                    </article>
+
+                    <a class="project project-link reveal" href="https://github.com/AbdulSameerS/Health-Risk-Forecasting"
+                        target="_blank" rel="noopener">
+                        <div class="project-top">
+                            <span class="tag">Forecasting · Geospatial</span>
+                            <span class="metric">50 states</span>
+                        </div>
+                        <h3>Health Risk Forecasting <span class="arrow" aria-hidden="true">↗</span></h3>
+                        <p>Forecast U.S. obesity trends with LSTM and ARIMA models across all 50 states, with an
+                            interactive Streamlit dashboard for geospatial analysis of CDC BRFSS data.</p>
+                        <ul class="chips">
+                            <li>LSTM</li>
+                            <li>TensorFlow</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </a>
+
+                    <a class="project project-link reveal"
+                        href="https://github.com/AbdulSameerS/Sentiment-Analysis-Project" target="_blank" rel="noopener">
+                        <div class="project-top">
+                            <span class="tag">NLP · BERT</span>
+                            <span class="metric">100K+ reviews</span>
+                        </div>
+                        <h3>Sentiment Analysis <span class="arrow" aria-hidden="true">↗</span></h3>
+                        <p>Classified 100K+ product reviews with fine-tuned BERT models, adding YAKE keyword extraction
+                            and visualizations to surface what drives sentiment.</p>
+                        <ul class="chips">
+                            <li>BERT</li>
+                            <li>Hugging Face</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </a>
+
+                    <a class="project project-link reveal" href="https://github.com/AbdulSameerS/Real-Time-Data-Pipeline"
+                        target="_blank" rel="noopener">
+                        <div class="project-top">
+                            <span class="tag">Streaming Data</span>
+                            <span class="metric">1M+ events/day</span>
+                        </div>
+                        <h3>Real-Time Data Pipeline <span class="arrow" aria-hidden="true">↗</span></h3>
+                        <p>End-to-end Kafka and Spark streaming pipeline processing over a million daily events,
+                            orchestrated with Airflow and Docker on AWS.</p>
+                        <ul class="chips">
+                            <li>Kafka</li>
+                            <li>Spark</li>
+                            <li>Airflow</li>
+                            <li>AWS</li>
+                        </ul>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Bento Grid Projects Section -->
-        <section id="work" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Selected Work</h2>
-                    <p class="section-desc">Machine learning models, NLP systems, and the data pipelines behind them.</p>
-                </div>
-                <div class="bento-grid">
-                    <div class="card bento-large group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">Time Series & ML</span>
-                            </div>
-                            <h3 class="card-title">Hourly Energy Demand Forecasting</h3>
-                            <p class="card-desc">
-                                Forecasts short-term demand from 16 years of PJM data (145,000+ observations) with 20+ engineered temporal and lag features over 24-hour and 7-day horizons. Benchmarked five models including LSTM and ARIMA; XGBoost achieved a best-in-class 0.75% MAPE.
-                            </p>
-                            <div class="card-tech">
-                                <span>XGBoost</span><span>LSTM</span><span>ARIMA</span><span>Python</span>
-                            </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <p class="eyebrow">02 · Experience</p>
+                    <h2>Where I've worked</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="job reveal">
+                        <div class="job-meta">
+                            <span class="job-date">Jul 2026 — Present</span>
+                            <span class="job-loc">Boston, MA</span>
                         </div>
-                        <div class="card-visual visual-gradient-1"></div>
-                    </div>
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">LLM & RAG</span>
-                            </div>
-                            <h3 class="card-title">Semantic Resume Matcher</h3>
-                            <p class="card-desc">
-                                Context-aware resume-job matching with LLaMA, FAISS, and RAG, improving match relevance by 40%. Sentence Transformer embeddings and LLaMA/Mistral-generated justifications make every match explainable.
-                            </p>
-                            <div class="card-tech">
-                                <span>LLaMA</span><span>FAISS</span><span>RAG</span>
-                            </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        <div class="job-main">
+                            <h3>Data Analyst Co-op <span class="at">· Fidelity</span></h3>
+                            <ul>
+                                <li>Develop Python and SQL workflows to prepare, clean, and validate large-scale
+                                    customer datasets, building reliable foundations for analytics and machine learning.
+                                </li>
+                                <li>Experiment with LLMs and generative AI for information extraction from unstructured
+                                    customer feedback, evaluating outputs against a manually labeled sample to measure
+                                    accuracy and error patterns.</li>
+                                <li>Run exploratory analysis and feature engineering with Pandas, and optimize SQL
+                                    queries and Python scripts to cut processing time in recurring workflows.</li>
+                            </ul>
+                            <ul class="chips chips-sm">
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>Pandas</li>
+                                <li>LLMs</li>
+                            </ul>
                         </div>
-                        <div class="card-visual visual-mesh"></div>
-                    </div>
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">NLP Transformer</span>
-                            </div>
-                            <h3 class="card-title">Toxicity Detection in Game Chats</h3>
-                            <p class="card-desc">
-                                Fine-tuned DistilBERT in PyTorch to flag toxic chat messages at 88% F1, with tokenization optimizations that made training 25% faster. A Python + AWS S3 pipeline enables real-time analysis, improving moderation efficiency by 35%.
-                            </p>
-                            <div class="card-tech">
-                                <span>DistilBERT</span><span>PyTorch</span><span>AWS S3</span>
-                            </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-meta">
+                            <span class="job-date">Apr 2026 — Jul 2026</span>
+                            <span class="job-loc">Andover, MA</span>
                         </div>
-                        <div class="card-visual visual-grid-pattern"></div>
-                    </div>
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">Cloud Data Engineering</span>
-                            </div>
-                            <h3 class="card-title">Cloud-Native Delta Lake</h3>
-                            <p class="card-desc">
-                                Scalable Delta Lake pipeline unifying structured and unstructured data on AWS Glue, S3, and Redshift as a foundation for real-time analytics and ML training, with ACID transaction logs and fine-grained IAM policies.
-                            </p>
-                            <div class="card-tech">
-                                <span>AWS Glue</span><span>S3</span><span>Redshift</span><span>Delta Lake</span>
-                            </div>
-                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        <div class="job-main">
+                            <h3>Strategic Marketing Analyst, AI Focus <span class="at">· MKS Inc.</span></h3>
+                            <ul>
+                                <li>Built end-to-end automated pipelines with Python, REST APIs, and Azure to ingest,
+                                    clean, and transform market, competitor, and financial data, with validation checks
+                                    for accuracy.</li>
+                                <li>Took daily processing and dashboard refreshes from prototype to production with
+                                    Azure Functions, Azure SQL Database, and Power BI.</li>
+                                <li>Engineered a web dashboard integrating competitor 10-K and quarterly financials for
+                                    continuously updated financial analysis.</li>
+                            </ul>
+                            <ul class="chips chips-sm">
+                                <li>Azure Functions</li>
+                                <li>Azure SQL</li>
+                                <li>Power BI</li>
+                                <li>REST APIs</li>
+                            </ul>
                         </div>
-                        <div class="card-visual visual-mesh"></div>
-                    </div>
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">Forecasting & Geospatial</span>
-                                <span class="card-date">2024</span>
-                            </div>
-                            <h3 class="card-title">Health Risk Forecasting</h3>
-                            <p class="card-desc">
-                                Predicted U.S. obesity trends using LSTM/ARIMA models across 50 states. Built an interactive Streamlit dashboard for geospatial analysis of CDC BRFSS data.
-                            </p>
-                            <div class="card-tech">
-                                <span>LSTM</span><span>TensorFlow</span><span>Streamlit</span>
-                            </div>
-                            <a href="https://github.com/AbdulSameerS/Health-Risk-Forecasting" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-meta">
+                            <span class="job-date">Sep 2025 — Present</span>
+                            <span class="job-loc">Boston, MA</span>
                         </div>
-                        <div class="card-visual visual-gradient-1"></div>
-                    </div>
-                    <div class="card bento-medium group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">NLP & BERT</span>
-                                <span class="card-date">2024</span>
-                            </div>
-                            <h3 class="card-title">Sentiment Analysis</h3>
-                            <p class="card-desc">
-                                Processed 100K+ product reviews using fine-tuned BERT models. Includes keyword extraction (YAKE) and visualization.
-                            </p>
-                            <div class="card-tech">
-                                <span>BERT</span><span>HuggingFace</span><span>Streamlit</span>
-                            </div>
-                            <a href="https://github.com/AbdulSameerS/Sentiment-Analysis-Project" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        <div class="job-main">
+                            <h3>Application Data Processor <span class="at">· Northeastern University</span></h3>
+                            <ul>
+                                <li>Audit and validate high-volume academic credential data across multiple sources,
+                                    maintaining 100% accuracy across 500+ records per cycle.</li>
+                                <li>Identify recurring discrepancy patterns with cross-functional teams, reducing case
+                                    resolution time by 20%.</li>
+                            </ul>
                         </div>
-                        <div class="card-visual visual-mesh"></div>
-                    </div>
-                    <div class="card bento-large group">
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="badge">Streaming Data</span>
-                            </div>
-                            <h3 class="card-title">Real-Time Data Pipeline</h3>
-                            <p class="card-desc">
-                                End-to-end Kafka & Spark streaming pipeline processing 1M+ daily events. Orchestrated with Airflow and Docker on AWS.
-                            </p>
-                            <div class="card-tech">
-                                <span>Kafka</span><span>Spark</span><span>AWS</span>
-                            </div>
-                            <a href="https://github.com/AbdulSameerS/Real-Time-Data-Pipeline" target="_blank" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-meta">
+                            <span class="job-date">Sep 2023 — Dec 2024</span>
+                            <span class="job-loc">Chennai, India</span>
                         </div>
-                        <div class="card-visual visual-grid-pattern"></div>
-                    </div>
-                </div>
+                        <div class="job-main">
+                            <h3>Data Scientist (ASE) <span class="at">· Tata Consultancy Services</span></h3>
+                            <ul>
+                                <li>Developed Python and SQL validation frameworks for schema consistency, missing
+                                    values, duplicates, and range constraints, ensuring reliable data for modeling.</li>
+                                <li>Built and evaluated predictive models with scikit-learn, tuning features and
+                                    parameters to improve accuracy.</li>
+                                <li>Optimized Snowflake and PostgreSQL transformations to improve performance and reduce
+                                    compute cost, and built Streamlit and Plotly KPI dashboards.</li>
+                            </ul>
+                            <ul class="chips chips-sm">
+                                <li>Snowflake</li>
+                                <li>PostgreSQL</li>
+                                <li>scikit-learn</li>
+                                <li>Streamlit</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-meta">
+                            <span class="job-date">Mar 2022 — Jun 2022</span>
+                            <span class="job-loc">India</span>
+                        </div>
+                        <div class="job-main">
+                            <h3>Machine Learning Intern <span class="at">· Cognizant</span></h3>
+                            <ul>
+                                <li>Processed millions of records with Apache Spark, PySpark, and Pandas, achieving over
+                                    3× speedup in distributed data transformation.</li>
+                                <li>Structured data models and schemas in Snowflake and Hive to keep machine learning
+                                    datasets consistent.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Experience (Minimalist List) -->
-        <section id="experience" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Experience</h2>
-                </div>
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <p class="eyebrow">03 · Skills</p>
+                    <h2>Toolkit</h2>
+                </header>
 
-                <div class="experience-list">
-                    <div class="exp-item">
-                        <div class="exp-date">Jul 2026 - Present</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Data Analyst Co-op</h3>
-                            <p class="exp-company">Fidelity · Boston, MA</p>
-                        </div>
-                        <ul class="exp-details">
-                            <li>Develop Python and SQL workflows to prepare, clean, and validate large-scale customer datasets, building reliable foundations for analytical and machine learning use cases.</li>
-                            <li>Perform exploratory data analysis and feature engineering with Pandas to uncover patterns, diagnose data quality issues, and prepare model-ready features.</li>
-                            <li>Experiment with LLMs and generative AI techniques for information extraction from unstructured customer feedback, evaluating outputs against a manually labeled sample to measure accuracy and error patterns and identify the most reliable approach.</li>
-                            <li>Optimize SQL queries and Python scripts to reduce processing time and computational overhead in recurring analysis workflows.</li>
-                            <li>Collaborate with cross-functional stakeholders to translate requirements into technical solutions and communicate insights.</li>
+                <div class="skills">
+                    <div class="skill-row reveal">
+                        <h3>Machine Learning & Deep Learning</h3>
+                        <ul class="chips">
+                            <li>PyTorch</li>
+                            <li>TensorFlow</li>
+                            <li>Scikit-learn</li>
+                            <li>XGBoost</li>
+                            <li>LSTM</li>
+                            <li>ARIMA</li>
+                            <li>Model Evaluation</li>
+                            <li>Feature Engineering</li>
+                            <li>Time Series Forecasting</li>
                         </ul>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-date">Apr 2026 - Jul 2026</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Strategic Marketing Analyst (AI Focus)</h3>
-                            <p class="exp-company">MKS Inc. · Andover, MA</p>
-                        </div>
-                        <ul class="exp-details">
-                            <li>Built end-to-end automated data pipelines using Python, REST APIs, and Azure to ingest, clean, and transform market, competitor, and financial data, with validation checks ensuring accuracy.</li>
-                            <li>Deployed automated processing and daily dashboard refreshes with Azure Functions, taking the solution from prototype to dependable production use.</li>
-                            <li>Loaded processed data into Azure SQL Database and developed interactive Power BI dashboards on market trends and competitor positioning.</li>
-                            <li>Engineered a web-based dashboard replicating Power BI visuals and integrating competitor 10-K and quarterly financials for continuously updated financial analysis.</li>
-                            <li>Researched emerging AI technologies and market trends with cross-functional stakeholders, translating findings into strategic planning insights.</li>
+                    <div class="skill-row reveal">
+                        <h3>AI & NLP</h3>
+                        <ul class="chips">
+                            <li>LLMs</li>
+                            <li>Generative AI</li>
+                            <li>RAG</li>
+                            <li>FAISS</li>
+                            <li>BERT</li>
+                            <li>DistilBERT</li>
+                            <li>LLaMA</li>
+                            <li>Sentence Transformers</li>
                         </ul>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-date">Sep 2025 - Present</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Application Data Processor</h3>
-                            <p class="exp-company">Northeastern University</p>
-                        </div>
-                        <ul class="exp-details">
-                            <li>Audit and validate high-volume academic credential data by cross-checking multiple
-                                sources and internal standards, maintaining 100% accuracy across 500+ records per cycle.
-                            </li>
-                            <li>Create structured documentation and standardize handoffs to improve operational clarity
-                                and reduce rework, improving processing efficiency by 15% during peak periods.</li>
-                            <li>Identify recurring discrepancy patterns and partner with cross-functional teams to
-                                resolve edge cases, reducing case resolution time by 20% while maintaining
-                                confidentiality and compliance.</li>
+                    <div class="skill-row reveal">
+                        <h3>Data & Experimentation</h3>
+                        <ul class="chips">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Exploratory Data Analysis</li>
+                            <li>Data Preprocessing</li>
+                            <li>Statistical Analysis</li>
                         </ul>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-date">Sep 2023 - Dec 2024</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Data Scientist (ASE)</h3>
-                            <p class="exp-company">Tata Consultancy Services · Chennai, India</p>
-                        </div>
-                        <ul class="exp-details">
-                            <li>Developed Python and SQL validation frameworks for schema consistency, missing values, duplicates, and range constraints, ensuring reliable data for analytics and modeling.</li>
-                            <li>Debugged data quality issues through systematic root-cause analysis and testing, documenting validation procedures to keep outputs consistent and reproducible.</li>
-                            <li>Optimized SQL transformations in Snowflake and PostgreSQL to improve performance, reduce compute cost, and improve maintainability.</li>
-                            <li>Built and evaluated predictive models with scikit-learn on validated datasets, tuning features and parameters to improve accuracy.</li>
-                            <li>Built interactive KPI dashboards with Streamlit and Plotly to visualize operational metrics and support analytical investigations.</li>
-                            <li>Collaborated with technical and business teams, maintaining traceability through GitHub pull requests and technical documentation.</li>
+                    <div class="skill-row reveal">
+                        <h3>Development & Cloud</h3>
+                        <ul class="chips">
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>AWS S3</li>
+                            <li>AWS Glue</li>
+                            <li>Azure</li>
+                            <li>Snowflake</li>
+                            <li>PostgreSQL</li>
+                            <li>Streamlit</li>
+                            <li>Plotly</li>
+                            <li>Power BI</li>
                         </ul>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-date">Mar 2022 - Jun 2022</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Machine Learning Intern</h3>
-                            <p class="exp-company">Cognizant</p>
-                        </div>
-                        <ul class="exp-details">
-                            <li>Processed millions of records using Apache Spark, PySpark, and Pandas, achieving over 3x
-                                speedup in distributed data transformation tasks, including data cleaning and
-                                preparation.</li>
-                            <li>Structured data models and schemas within Snowflake and Hive, leveraging SQL to support
-                                unstructured data analytics, ensuring high consistency across machine learning datasets.
-                            </li>
-                            <li>Optimized query performances by refining data models, directly supporting
-                                cross-functional teams in executing faster analytics workloads.</li>
+                    <div class="skill-row reveal">
+                        <h3>Programming</h3>
+                        <ul class="chips">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>C++</li>
+                            <li>R</li>
+                            <li>Java</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Technical Skills</h2>
-                </div>
-                <div class="skills-grid">
-                    <div class="card skill-card">
-                        <h3 class="skill-title">Programming</h3>
-                        <div class="card-tech"><span>Python</span><span>SQL</span><span>C++</span><span>R</span><span>Java</span></div>
+        <!-- ABOUT / EDUCATION / LEADERSHIP -->
+        <section class="section" id="about">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <p class="eyebrow">04 · About</p>
+                    <h2>Beyond the résumé</h2>
+                </header>
+
+                <div class="about-grid">
+                    <div class="card about-card reveal">
+                        <p class="lead">I bridge reliable data engineering and applied machine learning — from
+                            validating the data, to training and evaluating the model, to shipping the dashboard
+                            people actually use.</p>
+                        <p>I started at Tata Consultancy Services building validation frameworks and predictive models,
+                            and earned the <strong>Best Employee</strong> award. At MKS Inc. I took automated Azure
+                            pipelines from prototype to production. Today at Fidelity, I prepare model-ready customer
+                            data and evaluate LLM-based extraction from unstructured feedback.</p>
+                        <p>Outside of work I enjoy exploring farming practices, staying active, and organizing community
+                            events. I believe in technology as a force for social good.</p>
+                        <dl class="facts">
+                            <div>
+                                <dt>Based in</dt>
+                                <dd>Boston, MA</dd>
+                            </div>
+                            <div>
+                                <dt>Currently</dt>
+                                <dd>Data Analyst Co-op, Fidelity</dd>
+                            </div>
+                            <div>
+                                <dt>Focus</dt>
+                                <dd>ML · NLP · LLMs · Forecasting</dd>
+                            </div>
+                            <div>
+                                <dt>Graduating</dt>
+                                <dd>May 2027</dd>
+                            </div>
+                        </dl>
                     </div>
-                    <div class="card skill-card">
-                        <h3 class="skill-title">Machine Learning & Deep Learning</h3>
-                        <div class="card-tech"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>XGBoost</span><span>LSTM</span><span>ARIMA</span><span>Model Evaluation</span><span>Feature Engineering</span><span>Time Series Forecasting</span></div>
+
+                    <div class="card reveal">
+                        <p class="card-label">Education</p>
+                        <div class="edu">
+                            <div class="edu-row">
+                                <h3>Northeastern University</h3>
+                                <span class="muted">Expected May 2027</span>
+                            </div>
+                            <p>M.S. Data Science · GPA 3.75/4.0</p>
+                        </div>
+                        <div class="edu">
+                            <div class="edu-row">
+                                <h3>Madanapalle Institute of Technology & Science</h3>
+                                <span class="muted">2018 — 2022</span>
+                            </div>
+                            <p>B.Tech. Electronics & Communication Engineering · GPA 3.42/4.0</p>
+                        </div>
                     </div>
-                    <div class="card skill-card">
-                        <h3 class="skill-title">AI & NLP</h3>
-                        <div class="card-tech"><span>DistilBERT</span><span>BERT</span><span>LLaMA</span><span>Sentence Transformers</span><span>LLMs</span><span>Generative AI</span><span>RAG</span><span>FAISS</span></div>
-                    </div>
-                    <div class="card skill-card">
-                        <h3 class="skill-title">Data & Experimentation</h3>
-                        <div class="card-tech"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>EDA</span><span>Data Preprocessing</span><span>Statistical Analysis</span></div>
-                    </div>
-                    <div class="card skill-card">
-                        <h3 class="skill-title">Development & Cloud</h3>
-                        <div class="card-tech"><span>Git</span><span>GitHub</span><span>Docker</span><span>AWS S3</span><span>AWS Glue</span><span>Snowflake</span><span>PostgreSQL</span><span>Streamlit</span><span>Plotly</span><span>Power BI</span></div>
+
+                    <div class="card leader-card reveal">
+                        <p class="card-label">Leadership</p>
+                        <h3>University Innovation Fellow, Stanford d.school</h3>
+                        <p>Selected by Stanford's Hasso Plattner Institute of Design to lead campus-wide initiatives
+                            applying Design Thinking to student engagement.</p>
+                        <ul class="ticks">
+                            <li>Led "Change Agency" workshops for 500+ students</li>
+                            <li>President, Student Activity Centre at MITS</li>
+                            <li>AI Research Winter Intern, Asia University, Taiwan</li>
+                        </ul>
+                        <a class="text-link" href="https://universityinnovation.org/wiki/Fellow:Abdul_Sameer_Shaik"
+                            target="_blank" rel="noopener">View fellow profile ↗</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Education</h2>
-                </div>
-
-                <div class="experience-list">
-                    <div class="exp-item">
-                        <div class="exp-date">Expected May 2027</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Master of Science, Data Science</h3>
-                            <p class="exp-company">Northeastern University</p>
-                        </div>
-                        <div class="exp-desc" style="color: var(--text-secondary); margin-top: 5px;">
-                            <strong>GPA:</strong> 3.75/4.0<br>
-                            <strong>Relevant Coursework:</strong> Supervised/Unsupervised ML, Data Management,
-                            Processing, Algorithms.
-                        </div>
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="wrap">
+                <div class="contact-card reveal">
+                    <p class="eyebrow">05 · Contact</p>
+                    <h2>Let's work together.</h2>
+                    <p class="sec-desc">Open to Machine Learning, AI, and Data Science roles. The fastest way to reach
+                        me is email.</p>
+                    <div class="contact-actions">
+                        <a class="btn btn-solid" href="mailto:abdulsameershaik.sam@gmail.com">abdulsameershaik.sam@gmail.com</a>
+                        <a class="btn btn-ghost" href="mailto:shaik.abduls@northeastern.edu">shaik.abduls@northeastern.edu</a>
+                        <button class="btn btn-ghost" type="button" id="copy-email"
+                            data-email="abdulsameershaik.sam@gmail.com">Copy email</button>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-date">Aug 2018 - Jun 2022</div>
-                        <div class="exp-main">
-                            <h3 class="exp-role">Bachelor of Technology, Electronics & Communication</h3>
-                            <p class="exp-company">Madanapalle Institute of Technology & Science</p>
-                        </div>
-                        <div class="exp-desc" style="color: var(--text-secondary); margin-top: 5px;">
-                            <strong>GPA:</strong> 3.42/4.0<br>
-                            <strong>Activities:</strong> President of Student Activity Centre (SAC), Class
-                            Representative, National Service Scheme (NSS).
-                        </div>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/abdul-sameer-shaik-689323189/" target="_blank"
+                            rel="noopener">LinkedIn ↗</a>
+                        <a href="https://github.com/AbdulSameerS" target="_blank" rel="noopener">GitHub ↗</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- About / Footer Split -->
-        <section id="about" class="section">
-            <div class="container footer-bento">
-                <div class="card about-card">
-                    <h3>About Me</h3>
-                    <div class="about-content">
-                        <p>
-                            I am a Machine Learning and AI practitioner driven by the conviction that data should not just
-                            inform decisions—it should drive innovation. Currently pursuing my <strong>Master of Science
-                                in Data Science</strong> at <strong>Northeastern University</strong>, I bridge the gap
-                            between reliable data engineering and applied machine learning, from NLP and transformer
-                            models to time series forecasting.
-                        </p>
-                        <br>
-                        <p><strong>Professional Journey:</strong><br>
-                            I started at <strong>Tata Consultancy Services (TCS)</strong>, building data validation
-                            frameworks, optimized Snowflake/PostgreSQL transformations, and predictive models, and
-                            earned the "Best Employee" award. At <strong>MKS Inc.</strong> I took automated Azure data
-                            pipelines and Power BI dashboards from prototype to production. Today, as a Data Analyst
-                            Co-op at <strong>Fidelity</strong>, I prepare model-ready customer data and evaluate LLM-based
-                            information extraction from unstructured feedback.</p>
-                        <br>
-                        <p><strong>Leadership & Innovation:</strong><br>
-                            Beyond the code, I am a <strong>University Innovation Fellow (UIF)</strong> at Stanford
-                            d.school, where I champion Design Thinking to democratize access to innovation resources. My
-                            leadership extends to serving as President of the Student Activity Centre at MITS and
-                            coordinating community outreach with the <em>Helping Minds</em> NGO.</p>
-                        <br>
-                        <p><strong>Beyond the Screen:</strong><br>
-                            When I'm not fine-tuning transformers or evaluating models, you can find me exploring
-                            <strong>farming</strong> practices, staying active, or organizing community events. I
-                            believe in technology as a force for social good—whether it's predicting health risks or
-                            empowering students.
-                        </p>
-                    </div>
-                </div>
-                <div class="card contact-card">
-                    <h3>Let's Connect</h3>
-                    <div class="social-links">
-                        <a href="mailto:shaik.abduls@northeastern.edu">Email <i
-                                class="fas fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://www.linkedin.com/in/abdul-sameer-shaik-689323189/" target="_blank">LinkedIn <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/AbdulSameerS">GitHub <i
-                                class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Earth Section -->
-    <div id="earth-container"
-        style="width: 100%; height: 500px; position: relative; overflow: hidden; margin-top: -100px; z-index: 0; opacity: 0.8;">
-    </div>
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <span>© <span id="year">2026</span> Abdul Sameer Shaik</span>
+            <span class="muted">Boston, MA</span>
+        </div>
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 
